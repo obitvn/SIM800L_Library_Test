@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"sim800l_library_test\startup_stm32f103xb.o"
+"sim800l_library_test\sim800l.o"
+"sim800l_library_test\obitstring.o"
+"sim800l_library_test\main.o"
+"sim800l_library_test\stm32f1xx_it.o"
+"sim800l_library_test\stm32f1xx_hal_msp.o"
+"sim800l_library_test\stm32f1xx_hal_gpio_ex.o"
+"sim800l_library_test\stm32f1xx_hal_tim.o"
+"sim800l_library_test\stm32f1xx_hal_tim_ex.o"
+"sim800l_library_test\stm32f1xx_hal_uart.o"
+"sim800l_library_test\stm32f1xx_hal.o"
+"sim800l_library_test\stm32f1xx_hal_rcc.o"
+"sim800l_library_test\stm32f1xx_hal_rcc_ex.o"
+"sim800l_library_test\stm32f1xx_hal_gpio.o"
+"sim800l_library_test\stm32f1xx_hal_dma.o"
+"sim800l_library_test\stm32f1xx_hal_cortex.o"
+"sim800l_library_test\stm32f1xx_hal_pwr.o"
+"sim800l_library_test\stm32f1xx_hal_flash.o"
+"sim800l_library_test\stm32f1xx_hal_flash_ex.o"
+"sim800l_library_test\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "SIM800L_Library_Test\SIM800L_Library_Test.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SIM800L_Library_Test.map" -o SIM800L_Library_Test\SIM800L_Library_Test.axf
